@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    
+    <style>
+        body{
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+            height: 100%;
+            
+        }
+    </style>
+    </head>
+    <body style="background-image: radial-gradient(circle,pink,red,yellow);">
+        <div>
+       <div id ="id1">OTP GENARATOR</div>
+       <h3 id ="id2">OTP for Verification</h2>
+        <h5 id ="id3">CLICK BELOW FOR OTP</h5>
+        <button id ="id4">CLICK ME</button>
+        </div>
+    </body>
+    <script>
+        div1 = document.getElementsByTagName("div")[0]
+        // div1.style.border ="2px solid "
+        // div1.style.width = "50%";
+        // div1.style.height = "50%";
+        div1.setAttribute("style","border:2px solid;width:250px;height:250px;background-image: linear-gradient(45deg,pink,red, yellow);border-radius:10px;margin-left:450px;margin-top:120px")
+        div2 = document.getElementById("id1")
+        div2.style.color = "black"
+        div2.style.textAlign = "center"
+        div2.setAttribute("style","color:black;text-align:center;font-size:x-large;font-weight:bold")
+        div3 = document.getElementById("id2")
+        div3.setAttribute("style","text-align:center;color:violet")
+        div4 = document.getElementById("id3")
+        div4.setAttribute("style","text-align:center;color:pink")
+
+
+
+        button1 = document.getElementById("id4")
+        button1.setAttribute("style","text-align:center;margin-left:80px;background-color:whitesmoke")
+        button1.addEventListener("click",()=>{
+         div4.innerHTML = Math.floor(Math.random()*9999)
+         });
+
+    </script>
+</html>
